@@ -22,9 +22,6 @@ Create a basket
 Then create products and add them to basket
 ```
 product   = Checkout::Product.new('001', 'Lavender heart', 9.25)
-#product2   = Checkout::Product.new('002', 'Personalised cufflinks', 45.00)
-#product3   = Checkout::Product.new('003', 'Kids T-shirt', 19.95)
-
 basket << product
 ```
 Now you can create anew promotion and add it to basket
@@ -34,8 +31,8 @@ basket.add_promotion promotion
 ```
 You can check total price with or without discount using this methods
 ```
-    basket.total
-    basket.total_without_discount
+basket.total
+basket.total_without_discount
 ```
 
 ## Development
